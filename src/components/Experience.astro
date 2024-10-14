@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "2023 - Actualmente...",
+    title: "Full Stack Developer",
+    company: "Toplevel Consultores Técnológicos",
+    description:
+      "Responsable del desarrollo de aplicaciones web personalizadas y optimización de sistemas, logrando una mejora del 30% en la eficiencia de procesos operativos. Implementé automatización de facturación y control logístico, integrando CRMs y ERPs en múltiples equipos, mejorando la productividad y reduciendo tiempos de respuesta.",
+    link: "https://www.toplevelsl.com/",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Web Developer",
+    company: "Academia Juridica Online",
+    description:
+      "Desarrollo de la plataforma web para opositores utilizando WordPress, logrando un aumento del 25% en el tráfico orgánico gracias a la optimización del SEO. Implementé medidas de seguridad que protegieron los datos de  +100 usuarios, asegurando el cumplimiento de las normativas de protección de datos (GDPR).",
+    link: "https://www.academiajuridicaonline.com/",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
